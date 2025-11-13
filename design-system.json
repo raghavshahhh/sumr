@@ -1,0 +1,235 @@
+{
+  "brand": {
+    "name": "Sumr",
+    "tagline": "AI-Powered YouTube Summaries",
+    "domain": "sumr.ragspro.com"
+  },
+  "design_tokens": {
+    "colors": {
+      "background": "#0A0A0F",
+      "surface": "#1A1A2E",
+      "surface_elevated": "#16213E",
+      "accent_primary": "#4FD1C5",
+      "accent_secondary": "#F687B3", 
+      "accent_tertiary": "#FFD700",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#B8BCC8",
+      "text_muted": "#6B7280",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444"
+    },
+    "fonts": {
+      "header": "Poppins",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px", 
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px",
+      "3xl": "64px"
+    },
+    "shadows": {
+      "glow_cyan": "0 0 20px rgba(79, 209, 197, 0.3)",
+      "glow_pink": "0 0 20px rgba(246, 135, 179, 0.3)",
+      "glow_gold": "0 0 20px rgba(255, 215, 0, 0.3)",
+      "depth": "0 25px 50px -12px rgba(0, 0, 0, 0.8)"
+    }
+  },
+  "landing_page": {
+    "hero": {
+      "layout": "center_aligned",
+      "3d_object": {
+        "type": "floating_laptop",
+        "animation": "gentle_rotation",
+        "glow_effect": true,
+        "screen_content": "video_summary_preview"
+      },
+      "headline": "Turn Any YouTube Video Into Smart Summaries",
+      "subheadline": "AI-powered summaries with timestamps, key points, and actionable notes",
+      "cta": {
+        "text": "Summarize Now",
+        "style": "neon_gradient_button",
+        "animation": "hover_glow_pulse",
+        "3d_effect": "lift_on_hover"
+      },
+      "background": {
+        "type": "animated_particles",
+        "color": "gradient_mesh",
+        "animation": "floating_orbs"
+      }
+    },
+    "features": [
+      {
+        "icon": "brain_3d",
+        "title": "AI-Powered Analysis",
+        "description": "Advanced AI extracts key insights and timestamps",
+        "animation": "card_tilt_hover",
+        "3d_effect": "floating_card"
+      },
+      {
+        "icon": "lightning_3d", 
+        "title": "Instant Processing",
+        "description": "Get summaries in seconds, not minutes",
+        "animation": "card_tilt_hover",
+        "3d_effect": "floating_card"
+      },
+      {
+        "icon": "export_3d",
+        "title": "Multi-Format Export",
+        "description": "PDF, Notion, WhatsApp - share anywhere",
+        "animation": "card_tilt_hover", 
+        "3d_effect": "floating_card"
+      }
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": ["5 summaries/month", "Basic export", "Email support"],
+        "animation": "hover_neon_cyan",
+        "3d_effect": "card_lift"
+      },
+      {
+        "plan": "Pro",
+        "price": "$9",
+        "features": ["Unlimited summaries", "All export formats", "Priority support"],
+        "animation": "hover_neon_pink",
+        "3d_effect": "card_lift",
+        "popular": true
+      },
+      {
+        "plan": "Team",
+        "price": "$29", 
+        "features": ["Team workspace", "API access", "Custom branding"],
+        "animation": "hover_neon_gold",
+        "3d_effect": "card_lift"
+      }
+    ],
+    "footer": {
+      "style": "dark_minimal",
+      "links": ["Privacy", "Terms", "API", "Support"],
+      "social": ["Twitter", "LinkedIn", "GitHub"],
+      "animation": "link_glow_hover"
+    }
+  },
+  "dashboard": {
+    "layout": "sidebar_main",
+    "sidebar": {
+      "width": "280px",
+      "style": "glass_morphism",
+      "items": [
+        {"label": "Dashboard", "icon": "home_3d", "route": "/"},
+        {"label": "Summaries", "icon": "list_3d", "route": "/summaries"},
+        {"label": "Analytics", "icon": "chart_3d", "route": "/analytics"},
+        {"label": "Settings", "icon": "gear_3d", "route": "/settings"}
+      ],
+      "active_indicator": {
+        "style": "neon_glow_bar",
+        "animation": "slide_smooth"
+      }
+    },
+    "main_area": {
+      "input_section": {
+        "component": "floating_input_card",
+        "3d_effect": true,
+        "animation": "hover_lift",
+        "placeholder": "Paste YouTube URL here...",
+        "button": {
+          "text": "Summarize",
+          "style": "gradient_neon",
+          "animation": "pulse_ready"
+        }
+      },
+      "summary_display": {
+        "component": "flip_card_3d",
+        "front": "video_metadata",
+        "back": "summary_points",
+        "animation": "flip_on_ready",
+        "loading_state": {
+          "type": "neon_progress_particles",
+          "color": "accent_primary"
+        }
+      },
+      "action_buttons": [
+        {
+          "label": "Download PDF",
+          "icon": "download_3d",
+          "style": "glass_button",
+          "animation": "hover_glow_cyan"
+        },
+        {
+          "label": "Share WhatsApp", 
+          "icon": "whatsapp_3d",
+          "style": "glass_button",
+          "animation": "hover_glow_pink"
+        },
+        {
+          "label": "Export Notion",
+          "icon": "notion_3d", 
+          "style": "glass_button",
+          "animation": "hover_glow_gold"
+        }
+      ]
+    }
+  },
+  "animations": {
+    "micro_interactions": {
+      "button_hover": "scale(1.05) + glow",
+      "card_hover": "translateY(-8px) + tilt(2deg)",
+      "input_focus": "border_glow + scale(1.02)",
+      "loading": "particle_flow + progress_bar"
+    },
+    "page_transitions": {
+      "enter": "fadeIn + slideUp",
+      "exit": "fadeOut + slideDown"
+    },
+    "3d_effects": {
+      "floating": "translateY(±10px) loop",
+      "rotation": "rotateY(360deg) 20s linear infinite",
+      "tilt": "rotateX(5deg) rotateY(5deg) on hover"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "linear-gradient(135deg, #4FD1C5, #F687B3)",
+        "hover": "glow + scale(1.05)",
+        "3d": "translateZ(10px)"
+      },
+      "glass": {
+        "background": "rgba(255,255,255,0.1)",
+        "backdrop_filter": "blur(10px)",
+        "border": "1px solid rgba(255,255,255,0.2)"
+      }
+    },
+    "cards": {
+      "floating": {
+        "transform": "translateZ(20px)",
+        "shadow": "depth + glow",
+        "animation": "gentle_float"
+      },
+      "glass": {
+        "background": "rgba(26,26,46,0.8)",
+        "backdrop_filter": "blur(20px)",
+        "border": "1px solid rgba(79,209,197,0.2)"
+      }
+    }
+  },
+  "responsive": {
+    "mobile": {
+      "sidebar": "bottom_nav",
+      "3d_effects": "reduced",
+      "animations": "performance_optimized"
+    },
+    "tablet": {
+      "sidebar": "collapsible",
+      "3d_effects": "full",
+      "grid": "2_column"
+    }
+  }
+}

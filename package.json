@@ -1,0 +1,32 @@
+{
+  "name": "sumr",
+  "version": "1.0.0",
+  "description": "YouTube Video Summarization SaaS Platform",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.2.32",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "framer-motion": "^11.0.0",
+    "three": "^0.160.0",
+    "@react-three/fiber": "^8.16.0",
+    "@react-three/drei": "^9.95.0",
+    "lucide-react": "^0.400.0",
+    "axios": "^1.6.0",
+    "youtube-transcript": "^1.0.6",
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/three": "^0.158.0"
+  }
+}
